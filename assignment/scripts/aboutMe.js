@@ -2,7 +2,7 @@
 // 1 - Create a variable called `firstName` and assign it the value of your first name
 let firstName = "Mohamed";
 let lastname = "Ali";
-let fullname = "Mohamed Ali";
+let fullname = firstName + " " + lastname;
 console.log(fullname);
 // 2 - Create a second variable called `lastName` and assign it the value of your last name
 
@@ -12,8 +12,8 @@ console.log(fullname);
 
 // 4 - Create a variable called `luckyNumber` and assign it the value of your lucky number.
 //     Console log the value of `luckyNumber`
-let myLuckyNumber = 23;
-console.log(myLuckyNumber);
+let luckyNumber = 23;
+console.log(luckyNumber);
 
 // 5 - Create a variable `introduction` and using the variables from above,
 //     give it the value of:
@@ -21,7 +21,7 @@ console.log(myLuckyNumber);
 //     Refer back to the videos if you need help with this one.
 //     Console log the value of `introduction`
 let introduction =
-  "myname is " + fullname + ",and I think" + myLuckyNumber + "is a winner!";
+  "myname is " + fullname + ",and I think " + luckyNumber + " is a winner!";
 console.log(introduction);
 
 // 6 - Create a variable named `adventurous` and set it to a boolean value (true or false)
@@ -49,9 +49,11 @@ const allowedPets = 5;
 let result;
 
 if (adventurous == true) {
-  console.log("Adventures are great!");
+  result = "Adventures are great!";
+  console.log(result);
 } else {
-  console.log("How about we stay home?");
+  result = "How about we stay home?";
+  console.log(result);
 }
 //      if adventurous is true, set `result` to be "Adventures are great!",
 //      if it's not true,  set `result` to be "How about we stay home?"
@@ -63,7 +65,7 @@ if (adventurous == true) {
 //      set `diceRoll` to be "Roll the dice!"
 //      Console log the value of `diceRoll`
 let diceRoll = "Try again later";
-if (myLuckyNumber == 2 && adventurous == true) {
+if (luckyNumber == 2 && adventurous == true) {
   diceRoll = "Roll the dice!";
   console.log(diceRoll);
 }
@@ -110,22 +112,27 @@ if (pet > friendsPets) {
 //      You'll need to research how to use switch statements!
 //      console.log `luckyResult` after the conditional has run.
 let luckResult;
-switch (luckResult) {
+switch (luckyNumber) {
   case 1:
-    console.log("First is the worst");
+    luckResult = "First is the worst";
+    console.log(luckResult);
     break;
 
   case 2:
-    console.log("Second is the best");
+    luckResult = "Second is the best";
+    console.log(luckResult);
     break;
   case 3:
-    console.log("Third is the one with the polka dot dress");
+    luckResult = "Third is the one with the polka dot dress";
+    console.log(luckResult);
     break;
   default:
     console.log("Luck is what happens when preparation meets opportunity");
 }
 
 // 17 -- Rewrite question 12 with a `ternary` operator. You'll need to do research!
+result = adventurous ? "Adventures are great!" : "How about we stay home?";
+console.log(result);
 
 // DO NOT MODIFY
 // Used for automated testing
